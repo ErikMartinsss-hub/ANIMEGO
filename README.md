@@ -52,7 +52,7 @@ Desenvolvido por **Erik Martins** (BitSoul).
 *Estudante de Análise e Desenvolvimento de Sistemas na Estácio.*
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/%C3%A9rik-martins-3147b8193/)
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/dev_em_dev)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/@erikmartinsss9)
 
 ---
 
