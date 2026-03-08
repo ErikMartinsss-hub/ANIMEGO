@@ -1,0 +1,62 @@
+import React, { useState } from 'react';
+import { View, StyleSheet, ActivityIndicator, Dimensions } from 'react-native';
+import { WebView } from 'react-native-webview';
+import { StackScreenProps } from '@react-navigation/stack';
+import { RootStackParamList } from '../types/tmdb';
+
+type Props = StackScreenProps<RootStackParamList, 'Player'>;
+
+export default function Player({ route }: Props) {
+  const { id, season, episode, type } = route.params;
+  const [loading, setLoading] = useState(true);
+
+  // Montagem da URL conforme a documentação que você enviou
+  const videoUrl = type === 'serie' 
+    ? `https://playerflixapi.com/serie/${id}/${season}/${episode}`
+    : `https://playerflixapi.com/filme/${id}`;
+
+  return (
+    <View style={styles.container}>
+      {loading && (
+        <View style={styles.loaderContainer}>
+          <ActivityIndicator size="large" color="#A020F0" />
+        </View>
+      )}
+      
+      <WebView
+        source={{ uri: videoUrl }}
+        style={styles.webview}
+        onLoadStart={() => setLoading(true)}
+        onLoadEnd={() => setLoading(false)}
+        javaScriptEnabled={true}
+        domStorageEnabled={true}
+        allowsFullscreenVideo={true}
+        // Bloqueia tentativas do iframe de abrir outras abas (anúncios)
+        onShouldStartLoadWithRequest={(request) => {
+          if (request.url.includes('playerflixapi.com') || request.url === videoUrl) {
+            return true;
+          }
+          return false;
+        }}
+      />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#000',
+  },
+  webview: {
+    flex: 1,
+    backgroundColor: '#000',
+  },
+  loaderContainer: {
+    ...StyleSheet.absoluteFillObject,
+    backgroundColor: '#0A0A0A',
+    justifyContent: 'center',
+    alignItems: 'center',
+    zIndex: 1,
+  },
+});
