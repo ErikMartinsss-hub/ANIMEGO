@@ -1,13 +1,13 @@
-# 🎬 Anime Go - Streaming Mobile Experience
+#  Anime Go - Streaming Mobile Experience
 
 O **Anime Go** é um ecossistema mobile completo para amantes de anime, desenvolvido com foco em alta performance, fluidez e interface imersiva. Atualmente, o projeto está em fase final de homologação na **Google Play Store**.
 
-> **🚀 Status do Lançamento:** Em fase de **Closed Testing** (Dia 8/14). 
+> ** Status do Lançamento:** Em fase de **Closed Testing** (Dia 8/14). 
 > *Cumprindo os requisitos técnicos da Google para publicação em produção.*
 
 ---
 
-## ✨ Diferenciais do Projeto
+##  Diferenciais do Projeto
 
 Diferente de apps simples, o Anime Go foi estruturado para escala:
 * **Autenticação Robusta**: Integração completa com **Firebase Auth** (Login/Cadastro).
@@ -17,7 +17,7 @@ Diferente de apps simples, o Anime Go foi estruturado para escala:
 
 ---
 
-## 🛠️ Stack Tecnológica
+##  Stack Tecnológica
 
 * **Framework**: React Native (com Expo/EAS)
 * **Linguagem**: TypeScript (Tipagem forte para evitar bugs em produção)
@@ -28,7 +28,7 @@ Diferente de apps simples, o Anime Go foi estruturado para escala:
 
 ---
 
-## 🎨 Arquitetura do Código
+##  Arquitetura do Código
 
 O projeto segue padrões de mercado para facilitar a manutenção:
 * `src/api`: Centralização de serviços e instâncias do Axios/Firebase.
@@ -37,7 +37,7 @@ O projeto segue padrões de mercado para facilitar a manutenção:
 
 ---
 
-## 📱 Como Testar (Acesso Antecipado)
+##  Como Testar (Acesso Antecipado)
 
 Como o app está em teste fechado pela Google:
 1. Me envie seu e-mail via **LinkedIn** ou **Direct**.
@@ -46,7 +46,7 @@ Como o app está em teste fechado pela Google:
 
 ---
 
-## 👨‍💻 Autor e Desenvolvedor
+##  Autor e Desenvolvedor
 
 Desenvolvido por **Erik Martins** (BitSoul).
 *Estudante de Análise e Desenvolvimento de Sistemas na Estácio.*
@@ -56,5 +56,5 @@ Desenvolvido por **Erik Martins** (BitSoul).
 
 ---
 
-### 🛡️ Licença e Segurança
+###  Licença e Segurança
 *O código fonte é aberto para consulta de portfólio. Chaves de API e assinaturas de produção (.keystore) foram omitidas por segurança.*
